@@ -102,7 +102,8 @@ function buildNavigation(info) {
 }
 
 function createS3QueryUrl(marker) {
-  var s3_rest_url = BUCKET_URL;
+  return BUCKET_URL;
+  /*var s3_rest_url = BUCKET_URL;
   s3_rest_url += '?delimiter=/';
 
   //
@@ -140,7 +141,7 @@ function createS3QueryUrl(marker) {
   if (marker) {
     s3_rest_url += '&marker=' + marker;
   }
-  return s3_rest_url;
+  return s3_rest_url;*/
 }
 
 function getInfoFromS3Data(xml) {
